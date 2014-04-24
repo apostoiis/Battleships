@@ -1,4 +1,5 @@
 class Ship
+
   def initialize
     @status = 's'
   end
@@ -10,4 +11,5 @@ class Ship
   def hit!
     @status = 'x'
   end
+
 end
