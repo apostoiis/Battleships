@@ -1,6 +1,6 @@
 class Water
   def initialize
-    @status = ''
+    @status = " "
   end
 
   def to_s
