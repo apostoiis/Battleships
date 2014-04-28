@@ -22,7 +22,7 @@ include CheckCells
 
 
 	def space_available?(coords, length, direction)
-		cells_to_check = cellsRange(coords, length, direction, 0)
+		cells_to_check = cellsRange(coords, length, direction, 1)
 		# puts.inspect()
 		result = cells_to_check.select do  |key| 
 			# check = grid[key]

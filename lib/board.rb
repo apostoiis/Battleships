@@ -40,7 +40,9 @@ class Board
 	end
 	
 	def rows
-		@grid.values.each_slice(10).to_a.transpose
+		# @grid.values.each_slice(10).to_a.transpose
+		# view_grid
+		@grid.values.map {|value| value.content.to_s}.each_slice(10).to_a.transpose
 	end
 
 	def register_shot(coordinates)
